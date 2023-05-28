@@ -16,10 +16,10 @@ function Header({ home, active }) {
       <h3>I'm Living for <span>learn and explore</span> as much I can.</h3>
       {active !== "home" && <Logo active={active} />}
       <ul className='header_links'>
-        <Link to="/home"><li className={active === "home" ? "listitem active_link" : "listitem"} >Home <div className="underline"></div></li></Link>
-        <Link to="/about"><li className={active === "about" ? "listitem active_link" : "listitem"}>About<div className="underline"></div></li></Link>
-        <Link to="/experience"><li className={active === "experience" ? "listitem active_link" : "listitem"}>Experience<div className="underline"></div></li></Link>
-        <Link to="/contact"><li className={active === "contact" ? "listitem active_link" : "listitem"}>Contact<div className="underline"></div></li></Link>
+        <Link to="/home"><div className={active === "home" ? "listitem active_link" : "listitem"} >Home <div className="underline"></div></div></Link>
+        <Link to="/about"><div className={active === "about" ? "listitem active_link" : "listitem"}>About<div className="underline"></div></div></Link>
+        <Link to="/experience"><div className={active === "experience" ? "listitem active_link" : "listitem"}>Experience<div className="underline"></div></div></Link>
+        <Link to="/contact"><div className={active === "contact" ? "listitem active_link" : "listitem"}>Contact<div className="underline"></div></div></Link>
       </ul>
       <ul className="header_icons">
         <a href="mailto:nikhileshramoliya@gmail.com?subject=Hello&body=fahogogo"><div className='iconitem firstchild'><img src={gmail} alt="gmail" /></div></a>

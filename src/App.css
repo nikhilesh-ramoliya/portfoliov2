@@ -35,6 +35,7 @@
   margin-bottom: 3px;
 }
 .Header1 .header_links .listitem {
+  color: gray;
   margin: 5px 20px;
 }
 .Header1 .header_links .listitem .underline {
