@@ -6,7 +6,6 @@ import About from './Pages/About/About';
 import Experience from './Pages/Experience/Experience';
 import Contact from './Pages/Contact/Contact';
 
-import { tsParticles } from "tsparticles-engine";
 import { Design } from './Design';
 
 function App() {
