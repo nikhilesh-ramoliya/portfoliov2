@@ -24,7 +24,7 @@ function Header({ home, active }) {
       <ul className="header_icons">
         <a href="mailto:nikhileshramoliya@gmail.com?subject=Hello&body=fahogogo"><div className='iconitem firstchild'><img src={gmail} alt="gmail" /></div></a>
         <a href="https://www.linkedin.com/in/nikhileshramoliya"><div className='iconitem'><img src={linkedin} alt="linked in" /></div></a>
-        <a href="tel:+918469175299"><li className='iconitem'><div src={phone} alt="phone" /></li></a>
+        <a href="tel:+918469175299"><div className='iconitem'><img src={phone} alt="phone" /></div></a>
         <a href="https://www.instagram.com/niks.patel25/"><div className='iconitem'><img src={instagram} alt="instagram" /></div></a>
       </ul>
     </div>
