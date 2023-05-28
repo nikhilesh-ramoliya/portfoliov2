@@ -14,7 +14,6 @@ function App() {
     <BrowserRouter>
       <div style={{ color: "white", position: "absolute", top: 0, left: 0, zIndex: -1000000 }}>
         <Design />
-        hi
       </div>
       <div className="App">
         <Routes>

@@ -3,8 +3,8 @@ import Header from '../../components/Header/Header'
 
 function About() {
   return (
-    <div>
-        <Header home={false} active="about"/>
+    <div className='about'>
+      <Header home={false} active="about" />
     </div>
   )
 }

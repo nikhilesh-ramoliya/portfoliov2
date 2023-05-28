@@ -4,7 +4,6 @@
   width: 100vw;
 }
 .App .home {
-  margin: auto;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -94,8 +93,8 @@
   color: white;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   padding: 11px 0px;
-  border-bottom: 0.5px solid aqua;
 }
 .Header2 h3,
 .Header2 h1 {
@@ -103,6 +102,7 @@
 }
 .Header2 .header_links {
   display: flex;
+  align-items: center;
   width: 50%;
 }
 .Header2 .header_links .listitem {
@@ -135,6 +135,7 @@
 }
 .Header2 .header_icons .iconitem {
   margin: 3px;
+  margin-right: 20px;
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -155,9 +156,34 @@
   background-color: white;
 }
 
+.nr {
+  background-color: "white";
+  margin-left: 20px;
+  margin-right: 10px;
+  color: gray;
+  transition: all 0.2s;
+}
+.nr .nr1 {
+  color: gray;
+  border: 0;
+  border: 1px solid aqua;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-225deg);
+}
+.nr .nr1:hover {
+  color: aqua;
+  border: 2px solid aqua;
+}
+.nr .nr1:hover .nr2 {
+  transform: rotate(-135deg);
+}
+
 @media (max-width: 500px) {
   .App .home {
     height: 90vh;
+    width: 100vw;
   }
   .Header1 {
     width: 90%;
@@ -234,18 +260,22 @@
     border: 2px solid aqua;
   }
   .Header2 {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
   }
   .Header2 h3,
   .Header2 h1 {
     display: none;
   }
   .Header2 .header_links {
+    width: -moz-max-content;
+    width: max-content;
     display: flex;
-    width: 100%;
   }
   .Header2 .header_links .listitem {
-    margin-right: 20px;
+    margin-right: 10px;
     color: hwb(0 50% 50%);
   }
   .Header2 .header_links .listitem .underline {
@@ -270,5 +300,8 @@
   }
   .Header2 .header_icons {
     display: none;
+  }
+  .nr {
+    margin-left: 15px;
   }
 }/*# sourceMappingURL=App.css.map */
