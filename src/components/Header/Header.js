@@ -22,10 +22,10 @@ function Header({ home, active }) {
         <Link to="/contact"><li className={active === "contact" ? "listitem active_link" : "listitem"}>Contact<div className="underline"></div></li></Link>
       </ul>
       <ul className="header_icons">
-        <a href="mailto:nikhileshramoliya@gmail.com?subject=Hello&body=fahogogo"><li className='iconitem firstchild'><img src={gmail} alt="gmail" /></li></a>
-        <a href="https://www.linkedin.com/in/nikhileshramoliya"><li className='iconitem'><img src={linkedin} alt="linked in" /></li></a>
-        <a href="tel:+918469175299"><li className='iconitem'><img src={phone} alt="phone" /></li></a>
-        <a href="https://www.instagram.com/niks.patel25/"><li className='iconitem'><img src={instagram} alt="instagram" /></li></a>
+        <a href="mailto:nikhileshramoliya@gmail.com?subject=Hello&body=fahogogo"><div className='iconitem firstchild'><img src={gmail} alt="gmail" /></div></a>
+        <a href="https://www.linkedin.com/in/nikhileshramoliya"><div className='iconitem'><img src={linkedin} alt="linked in" /></div></a>
+        <a href="tel:+918469175299"><li className='iconitem'><div src={phone} alt="phone" /></li></a>
+        <a href="https://www.instagram.com/niks.patel25/"><div className='iconitem'><img src={instagram} alt="instagram" /></div></a>
       </ul>
     </div>
 
