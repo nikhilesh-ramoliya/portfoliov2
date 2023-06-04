@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import my from "../../Assets/my.png"
 
-const HightLightedText = ({ text }) => {
+export const HightLightedText = ({ text }) => {
   return (
     <Typography variant='body1' component={"span"} color={'cyan'}>
       {text}
@@ -21,25 +21,25 @@ function About() {
         mt: 4
       }}>
         <Box>
-          <Typography variant="h4" component="h1" color={"cyan"} gutterBottom>
+          <Typography variant="h5" component="h1" color={"white"} gutterBottom>
             About Me
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             I'm a Full-Stack Developer specializing in <HightLightedText text="Node.js" /> and <HightLightedText text="React.js" />.
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             With a passion for creating efficient and scalable web applications, I deliver high-quality solutions tailored to clients' needs.
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             I excel in Node.js and React.js, building dynamic and interactive web applications with robust back-end systems and modular front-end components.
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             Additionally, I have experience in cloud computing and infrastructure, utilizing <HightLightedText text={"AWS"} /> for optimal application performance and scalability.
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             I also have hands-on experience with <HightLightedText text="Stripe" /> for seamless and secure payment processing and integration.
           </Typography>
-          <Typography variant="body1" paragraph>
+          <Typography variant="subtitle2" paragraph>
             If you're looking for a dedicated Full-Stack Developer to bring your ideas to life, please don't hesitate to reach out. Let's achieve your goals together!
           </Typography>
           <Box>
