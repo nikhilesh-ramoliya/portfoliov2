@@ -32,7 +32,7 @@ export const Design = () => {
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: "grab",
                         },
                         resize: true,
                     },
@@ -45,9 +45,9 @@ export const Design = () => {
                             duration: 0.4,
                         },
                         grab: {
-                            distance: 800,
+                            distance: 400,
                             lineLinked: {
-                                opacity: 1,
+                                opacity: 0.4,
                             },
                         },
 
@@ -61,7 +61,7 @@ export const Design = () => {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.3,
+                        opacity: 0.2,
                         width: 1,
                     },
                     collisions: {
