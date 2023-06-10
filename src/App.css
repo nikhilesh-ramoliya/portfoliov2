@@ -190,7 +190,7 @@
   transform: rotate(-135deg);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .App .home {
     height: 90vh;
     width: 100vw;
