@@ -19,7 +19,7 @@ function Header({ home, active }) {
         <Link to="/home"><div className={active === "home" ? "listitem active_link" : "listitem"} >Home <div className="underline"></div></div></Link>
         <Link to="/about"><div className={active === "about" ? "listitem active_link" : "listitem"}>About<div className="underline"></div></div></Link>
         <Link to="/experience"><div className={active === "experience" ? "listitem active_link" : "listitem"}>Experience<div className="underline"></div></div></Link>
-        <Link to="/contact"><div className={active === "contact" ? "listitem active_link" : "listitem"}>Contact<div className="underline"></div></div></Link>
+        <Link to="/work"><div className={active === "work" ? "listitem active_link" : "listitem"}>Work<div className="underline"></div></div></Link>
       </ul>
       <ul className="header_icons">
         <a href="mailto:nikhileshramoliya@gmail.com?subject=Hello&body=fahogogo"><div className='iconitem firstchild'><img src={gmail} alt="gmail" /></div></a>

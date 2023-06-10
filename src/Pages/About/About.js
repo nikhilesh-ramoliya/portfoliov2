@@ -64,9 +64,8 @@ function About() {
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          height: { md: "80vh", xs: "100vw" },
+          height: { md: "auto", xs: "100vw" },
           width: { md: "25vw", xs: "100vw" },
-          color: "#f5f5f5"
         }}>
 
         </Box>

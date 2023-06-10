@@ -17,6 +17,9 @@
 .App .experience {
   color: gray;
 }
+.App .work {
+  color: white;
+}
 
 .Header1 {
   background-color: transparent;

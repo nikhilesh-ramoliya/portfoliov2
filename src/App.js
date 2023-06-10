@@ -4,9 +4,9 @@ import "./App.css"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './Pages/About/About';
 import Experience from './Pages/Experience/Experience';
-import Contact from './Pages/Contact/Contact';
 
 import { Design } from './Design';
+import Work from './Pages/Work/Work';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/experience' element={<Experience />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/work' element={<Work />} />
         </Routes>
       </div>
     </BrowserRouter>
