@@ -5,6 +5,7 @@ import project1 from "../../Assets/project1.jpeg"
 import project2 from "../../Assets/project2.jpeg"
 import project3 from "../../Assets/project3.jpeg"
 import project4 from "../../Assets/project4.jpeg"
+import project5 from "../../Assets/project5.jpeg"
 
 function Work() {
   return (
@@ -241,10 +242,10 @@ function Work() {
         <Box sx={{
           display: "flex",
           flexDirection: { md: "row", xs: "column" },
-          width: "100%"
+          width: "100%",
         }}>
           <Box sx={{
-            backgroundImage: `url(${project1})`,
+            backgroundImage: `url(${project5})`,
             backgroundPosition: "left",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -253,33 +254,50 @@ function Work() {
               transform: "scale(1.1)",
               opacity: "1",
               borderStyle: "dashed",
-
             },
             width: { md: "50%", xs: "100%" },
             boxSizing: "border-box",
-            height: { md: "22vw", xs: "70vw" },
+            height: { md: "100%", xs: "70vw" },
+            minHeight: "22vw",
             border: "2px solid cyan",
             borderStyle: "dotted",
-            borderRadius: "2.5rem"
+            borderRadius: "2.5rem",
           }}>
           </Box>
           <Box sx={{
             width: { md: "50%", xs: "100%" },
             boxSizing: "border-box",
-            height: { md: "100%", xs: "auto" },
+            height: { md: "auto", xs: "auto" },
             padding: { md: "1rem 0 0  5rem", xs: "1rem 0rem" },
             overflow: "hidden",
-            textAlign: "right"
+            textAlign: "right",
           }}>
             <Typography variant='h5' color={"cyan"}>
-              Own Notes
+              ButterNeck
             </Typography>
             <Typography variant='subtitle1' color={"white"}>
-              A user-friendly online platform for effortless note-taking, organization, and collaboration. Customize, search, and sync your notes across devices for a seamless and secure experience. Boost your productivity and stay organized with NoteNest's intuitive features.
+              ☀︎ A Productivity tool for organization.
             </Typography>
-            <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2 }}>
+            <Typography variant='subtitle1' color={"white"} >
+              <Typography variant='h6' color={"cyan"} component={'span'} mr={1}>♖</Typography>
+              Create apis and database for create new organization , tasks and projects.
+            </Typography>
+            <Typography variant='subtitle1' color={"white"} >
+              <Typography variant='h6' color={"cyan"} component={'span'} mr={1}>♖</Typography>
+              It is a tool like where you can assign task to your project team and see progress of project any time.
+            </Typography>
+
+            <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2, flexWrap: "wrap" }}>
               <Typography variant='subtitle1' color={"cyan"} component={'span'}>
-                Notion
+                ReactJs
+              </Typography>
+              <Typography variant='subtitle1' color={"white"} component={'span'} mx={2}>|</Typography>
+              <Typography variant='subtitle1' color={"cyan"} component={'span'}>
+                NestJs
+              </Typography>
+              <Typography variant='subtitle1' color={"white"} component={'span'} mx={2}>|</Typography>
+              <Typography variant='subtitle1' color={"cyan"} component={'span'}>
+                Postgres
               </Typography>
             </Box>
           </Box>
@@ -338,6 +356,52 @@ function Work() {
           </Box>
         </Box>
 
+        <Box sx={{
+          display: "flex",
+          flexDirection: { md: "row", xs: "column" },
+          width: "100%"
+        }}>
+          <Box sx={{
+            backgroundImage: `url(${project1})`,
+            backgroundPosition: "left",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            opacity: { md: "0.5", xs: "1" },
+            ":hover": {
+              transform: "scale(1.1)",
+              opacity: "1",
+              borderStyle: "dashed",
+
+            },
+            width: { md: "50%", xs: "100%" },
+            boxSizing: "border-box",
+            height: { md: "22vw", xs: "70vw" },
+            border: "2px solid cyan",
+            borderStyle: "dotted",
+            borderRadius: "2.5rem"
+          }}>
+          </Box>
+          <Box sx={{
+            width: { md: "50%", xs: "100%" },
+            boxSizing: "border-box",
+            height: { md: "100%", xs: "auto" },
+            padding: { md: "1rem 0 0  5rem", xs: "1rem 0rem" },
+            overflow: "hidden",
+            textAlign: "right"
+          }}>
+            <Typography variant='h5' color={"cyan"}>
+              Own Notes
+            </Typography>
+            <Typography variant='subtitle1' color={"white"}>
+              A user-friendly online platform for effortless note-taking, organization, and collaboration. Customize, search, and sync your notes across devices for a seamless and secure experience. Boost your productivity and stay organized with NoteNest's intuitive features.
+            </Typography>
+            <Box sx={{ display: "flex", justifyContent: "flex-end", mt: 2 }}>
+              <Typography variant='subtitle1' color={"cyan"} component={'span'}>
+                Notion
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
 
 
       </Container>
