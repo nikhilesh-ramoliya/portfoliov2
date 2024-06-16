@@ -21,8 +21,9 @@ function About() {
         mt: 4
       }}>
         <Box>
-          <Typography variant="h5" component="h1" color={"white"} gutterBottom>
+          <Typography variant="h5" component="h1" color={"white"} gutterBottom sx={{ display: "flex", justifyContent: "space-between" }}>
             About Me
+            <a href="https://drive.google.com/drive/folders/1YwbO_w7w3QwfleAdV0FNfVpksSqMasrD"><div className='iconButton'>Resume</div></a>
           </Typography>
           <Typography variant="subtitle2" paragraph>
             I'm a Full-Stack Developer specializing in <HightLightedText text="Node.js" /> and <HightLightedText text="React.js" />.
@@ -69,6 +70,7 @@ function About() {
         }}>
 
         </Box>
+
       </Container>
     </div>
   )

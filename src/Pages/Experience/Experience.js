@@ -20,7 +20,9 @@ const Exp = () => {
   return (
     <Container maxWidth="lg" sx={{
       display: 'flex',
-      flexDirection: 'column'
+      width: "auto",
+      justifyContent: 'space-between',
+      flexDirection: 'column',
     }}>
       <Typography variant="h5" component="h1" color={"white"} my={{
         xs: 2,
@@ -29,7 +31,7 @@ const Exp = () => {
         My Experience
       </Typography>
       <Grid container>
-        <Exp1 />
+        {/* <Exp1 /> */}
         <Exp2 />
       </Grid>
     </Container>
@@ -64,11 +66,11 @@ const Exp1 = () => {
 
 const Exp2 = () => {
   return (
-    <Grid item mt={{ xs: 4, md: 0 }} xs={12} md={6}>
+    <Grid item mt={{ xs: 4, md: 0 }}>
       <Typography variant='h6' color={"cyan"}>
         Full-Stack Software Developer <Typography component={'span'} color={"gray"}>@Lanatus Systems</Typography>
       </Typography>
-      <Typography variant='caption'>Ahmadabad, Gujarat, India // <Typography component={'span'} variant='caption' color={"cyan"}>July 2022 - September 2022</Typography></Typography>
+      <Typography variant='caption'>Ahmadabad, Gujarat, India // <Typography component={'span'} variant='caption' color={"cyan"}>July 2022 - Present</Typography></Typography>
       <Typography variant='subtitle2' color={'white'}>Key Responsibilities : </Typography>
       <List>
         <Typography variant='subtitle2' component={"li"} >
@@ -92,7 +94,9 @@ const Edu = () => {
   return (
     <Container maxWidth="lg" sx={{
       display: 'flex',
-      flexDirection: 'column'
+      width: "auto",
+      justifyContent: 'space-between',
+      flexDirection: 'column',
     }}>
       <Typography variant="h5" component="h1" color={"white"} my={{
         xs: 2,
@@ -101,7 +105,7 @@ const Edu = () => {
         My Education
       </Typography>
       <Grid container>
-        <EduCom name="12th Science" place="Purohit Science school" location="Jamnagar, Gujarat, India" timeSpan="July 2022 - September 2022" />
+        {/* <EduCom name="12th Science" place="Purohit Science school" location="Jamnagar, Gujarat, India" timeSpan="July 2022 - September 2022" /> */}
         <EduCom name="Bachelor of Electrical Engineering" place="Government Engineering College" location="Rajkot, Gujarat, India" timeSpan="July 2022 - September 2022" />
 
       </Grid >
@@ -113,7 +117,7 @@ const EduCom = ({
   name, place, location, timeSpan
 }) => {
   return (
-    <Grid item mt={{ xs: 2, md: 0 }} xs={12} md={6}>
+    <Grid item mt={{ xs: 2, md: 0 }} >
       <Typography variant='h6' color={"cyan"}>
         {name} <Typography component={'span'} color={"gray"}>@{place}</Typography>
       </Typography>

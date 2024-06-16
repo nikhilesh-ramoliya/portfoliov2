@@ -3,6 +3,7 @@
   min-height: 100vh;
   width: 100vw;
 }
+
 .App .home {
   width: 100vw;
   min-height: 100vh;
@@ -11,12 +12,15 @@
   align-items: center;
   box-sizing: border-box;
 }
+
 .App .about {
   color: gray;
 }
+
 .App .experience {
   color: gray;
 }
+
 .App .work {
   color: white;
 }
@@ -25,12 +29,15 @@
   background-color: transparent;
   color: white;
 }
+
 .Header1 li {
   color: gray;
 }
+
 .Header1 h3 {
   color: gray;
 }
+
 .Header1 span {
   color: white;
   text-decoration: underline;
@@ -38,38 +45,47 @@
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
 }
+
 .Header1 .header_links {
   color: gray;
   display: flex;
   margin-bottom: 3px;
 }
+
 .Header1 .header_links .listitem {
   color: gray;
   margin: 5px 20px;
 }
+
 .Header1 .header_links .listitem .underline {
   height: 3px;
   width: 0px;
   margin: -1px;
 }
+
 .Header1 .header_links .listitem:first-child {
   margin: 5px 20px 3px 0px;
 }
+
 .Header1 .header_links .active_link {
   color: white;
 }
+
 .Header1 .header_links .listitem:hover {
   color: white;
 }
+
 .Header1 .header_links .listitem:hover .underline {
   background: aqua;
   height: 3px;
   width: 100%;
 }
+
 .Header1 .header_icons {
   color: red;
   display: flex;
 }
+
 .Header1 .header_icons .iconitem {
   margin: 2px 10px;
   width: 30px;
@@ -81,16 +97,19 @@
   border: 2px solid white;
   background-color: gray;
 }
+
 .Header1 .header_icons .iconitem img {
   border-radius: 100%;
   margin: 3px;
   width: 30px;
   height: 30px;
 }
+
 .Header1 .header_icons .firstchild {
   margin-left: 0px;
   background-color: white;
 }
+
 .Header1 .header_icons .iconitem:hover {
   background-color: white;
   border: 2px solid aqua;
@@ -106,43 +125,53 @@
   box-sizing: border-box;
   padding: 11px 0px;
 }
+
 .Header2 h3,
 .Header2 h1 {
   display: none;
 }
+
 .Header2 .header_links {
   display: flex;
   align-items: center;
   width: 50%;
 }
+
 .Header2 .header_links .listitem {
   margin-right: 10px;
   color: hwb(0 50% 50%);
 }
+
 .Header2 .header_links .listitem .underline {
   background-color: aqua;
   height: 3px;
   width: 0px;
   margin: -1px;
 }
+
 .Header2 .header_links .listitem:first-child {
   margin-left: 20px;
 }
+
 .Header2 .header_links .listitem:hover {
   color: white;
 }
+
 .Header2 .header_links .listitem:hover .underline {
   height: 3px;
   width: 100%;
   margin: -1px;
 }
+
 .Header2 .header_links .active_link {
   color: white;
 }
+
 .Header2 .header_icons {
   display: flex;
   margin-left: auto;
 }
+
 .Header2 .header_icons .iconitem {
   margin: 3px;
   margin-right: 20px;
@@ -155,15 +184,52 @@
   border: 2px solid white;
   background-color: gray;
 }
+
 .Header2 .header_icons .iconitem img {
   border-radius: 100%;
   margin: 3px;
   width: 25px;
   height: 25px;
 }
+
 .Header2 .header_icons .iconitem:hover {
   border: 2px solid aqua;
   background-color: white;
+}
+
+.iconButton {
+  background-color: transparent;
+  color: white;
+  font-size: medium;
+  border-radius: 100px;
+  padding: 3px;
+  border: 1px solid white;
+  animation: blikingbutton 1s infinite;
+  transition: all 0.5s;
+}
+
+.iconButton:hover {
+  color: aqua;
+  padding: 5px;
+  border: 1px solid aqua;
+}
+
+@keyframes blikingbutton {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
 }
 
 .nr {
@@ -173,6 +239,7 @@
   color: gray;
   transition: all 0.2s;
 }
+
 .nr .nr1 {
   color: gray;
   border: 0;
@@ -182,10 +249,12 @@
   height: 50px;
   transform: rotate(-225deg);
 }
+
 .nr .nr1:hover {
   color: aqua;
   border: 2px solid aqua;
 }
+
 .nr .nr1:hover .nr2 {
   transform: rotate(-135deg);
 }
@@ -195,17 +264,21 @@
     height: 90vh;
     width: 100vw;
   }
+
   .Header1 {
     width: 90%;
     color: white;
   }
+
   .Header1 li {
     color: gray;
   }
+
   .Header1 h3 {
     color: gray;
     font-size: medium;
   }
+
   .Header1 span {
     color: white;
     text-decoration: underline;
@@ -213,37 +286,46 @@
     text-decoration-thickness: 3px;
     text-underline-offset: 4px;
   }
+
   .Header1 .header_links {
     color: gray;
     display: flex;
     margin-bottom: 3px;
   }
+
   .Header1 .header_links .listitem {
     margin: 5px 20px;
   }
+
   .Header1 .header_links .listitem .underline {
     height: 3px;
     width: 0px;
     margin: -1px;
   }
+
   .Header1 .header_links .listitem:first-child {
     margin: 5px 20px 3px 0px;
   }
+
   .Header1 .header_links .active_link {
     color: white;
   }
+
   .Header1 .header_links .listitem:hover {
     color: white;
   }
+
   .Header1 .header_links .listitem:hover .underline {
     background: aqua;
     height: 3px;
     width: 100%;
   }
+
   .Header1 .header_icons {
     color: red;
     display: flex;
   }
+
   .Header1 .header_icons .iconitem {
     margin: 2px 10px;
     width: 30px;
@@ -255,63 +337,79 @@
     border: 2px solid white;
     background-color: gray;
   }
+
   .Header1 .header_icons .iconitem img {
     border-radius: 100%;
     margin: 3px;
     width: 30px;
     height: 30px;
   }
+
   .Header1 .header_icons .firstchild {
     margin-left: 0px;
     background-color: white;
   }
+
   .Header1 .header_icons .iconitem:hover {
     background-color: white;
     border: 2px solid aqua;
   }
+
   .Header2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 0;
   }
+
   .Header2 h3,
   .Header2 h1 {
     display: none;
   }
+
   .Header2 .header_links {
     width: -moz-max-content;
     width: max-content;
     display: flex;
   }
+
   .Header2 .header_links .listitem {
     margin-right: 10px;
     color: hwb(0 50% 50%);
   }
+
   .Header2 .header_links .listitem .underline {
     background-color: aqua;
     height: 3px;
     width: 0px;
     margin: -1px;
   }
+
   .Header2 .header_links .listitem:first-child {
     margin-left: 2px;
   }
+
   .Header2 .header_links .listitem:hover {
     color: white;
   }
+
   .Header2 .header_links .listitem:hover .underline {
     height: 3px;
     width: 100%;
     margin: -1px;
   }
+
   .Header2 .header_links .active_link {
     color: white;
   }
+
   .Header2 .header_icons {
     display: none;
   }
+
   .nr {
     margin-left: 15px;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */
