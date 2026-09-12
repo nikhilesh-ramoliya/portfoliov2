@@ -4,32 +4,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="theme-color" content="#0c0b09" />
+  <meta name="description" content="Nikhilesh Ramoliya — Senior Software Engineer. Agentic AI, NestJS, and platforms that stay cheap at scale." />
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored === "light" || stored === "dark"
+          ? stored
+          : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f3eee4" : "#0c0b09");
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet" />
-  <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-
-  <title>Nikhilesh Ramoliya</title>
-  <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-      text-decoration: none;
-      font-family: "Mukta", sans-serif;
-      letter-spacing: 1px;
-      transition: all 0.5s;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/logo.png" />
+  <title>Nikhilesh Ramoliya — Senior Software Engineer</title>
 </head>
 
 <body>
-
   <div id="root"></div>
-
 </body>
 
 </html>
