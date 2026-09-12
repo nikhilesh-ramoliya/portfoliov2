@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NR">
+  <rect width="64" height="64" fill="#0c0b09"/>
+  <polygon points="32,8 56,32 32,56 8,32" fill="none" stroke="#c6f24a" stroke-width="1.5"/>
+  <text x="32" y="37" text-anchor="middle" fill="#c6f24a" font-family="Outfit, Avenir Next, Segoe UI, sans-serif" font-size="13" font-weight="500" letter-spacing="0.5">NR</text>
+</svg>

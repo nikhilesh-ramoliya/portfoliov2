@@ -58,7 +58,10 @@ function Nav() {
     <header className={`nav${open ? " is-open" : ""}${hidden ? " is-hidden" : ""}`}>
       <div className="nav-inner">
         <a className="brand" href="#top" onClick={close}>
-          <span className="mark">{profile.monogram}</span>
+          <span className="mark" aria-hidden="true">
+            <span className="mark-ring" />
+            <span className="mark-letters">{profile.monogram}</span>
+          </span>
           <span>
             <span className="brand-name">{profile.name}</span>
             <span className="brand-role">{profile.title}</span>

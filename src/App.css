@@ -294,14 +294,29 @@ img {
 }
 
 .mark {
+  position: relative;
   width: 36px;
   height: 36px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--line-strong);
-  font-family: var(--serif);
-  font-size: 0.92rem;
+  flex-shrink: 0;
   color: var(--signal);
+}
+
+.mark-ring {
+  position: absolute;
+  inset: 6px;
+  border: 1.25px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.mark-letters {
+  position: relative;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .brand-name {
